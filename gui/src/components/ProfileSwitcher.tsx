@@ -25,6 +25,9 @@ import { setLastControlServerBetaEnabledStatus } from "../redux/slices/miscSlice
 import { RootState } from "../redux/store";
 import { getFontSize } from "../util";
 import HeaderButtonWithText from "./HeaderButtonWithText";
+import i18n from 'i18next';
+// import { useTranslation } from 'react-i18next';
+// const { t } = useTranslation();
 
 const StyledListbox = styled(Listbox)`
   background-color: ${vscBackground};
@@ -244,7 +247,7 @@ function ProfileSwitcher(props: {}) {
             );
           }
         }}
-        text="Configure Continue"
+        text={i18n.t("Configure Continue")}
       >
         <Cog6ToothIcon width="1.4em" height="1.4em" />
       </HeaderButtonWithText>

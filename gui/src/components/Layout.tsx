@@ -29,6 +29,9 @@ import IndexingProgressBar from "./loaders/IndexingProgressBar";
 import ProgressBar from "./loaders/ProgressBar";
 import PostHogPageView from "./PosthogPageView";
 import ProfileSwitcher from "./ProfileSwitcher";
+import i18n from 'i18next';
+// import { useTranslation } from 'react-i18next';
+// const { t } = useTranslation();
 
 // #region Styled Components
 const FOOTER_HEIGHT = "1.8em";
@@ -286,7 +289,7 @@ const Layout = () => {
               <ProfileSwitcher />
               <HeaderButtonWithText
                 tooltipPlacement="top-end"
-                text="Help"
+                text={i18n.t("Help")}
                 onClick={() => {
                   if (location.pathname === "/help") {
                     navigate("/");

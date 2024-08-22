@@ -57,6 +57,9 @@ import {
 } from "../util";
 import { FREE_TRIAL_LIMIT_REQUESTS } from "../util/freeTrial";
 import { getLocalStorage, setLocalStorage } from "../util/localStorage";
+import i18n from 'i18next';
+// import { useTranslation } from 'react-i18next';
+// const { t } = useTranslation();
 
 const TopGuiDiv = styled.div`
   overflow-y: scroll;
@@ -483,7 +486,7 @@ function GUI() {
                 }}
                 className="mr-auto"
               >
-                New Session ({getMetaKeyLabel()} {isJetBrains() ? "J" : "L"})
+                {i18n.t("New Session")} ({getMetaKeyLabel()} {isJetBrains() ? "J" : "L"})
               </NewSessionButton>{" "}
             </div>
           ) : (
@@ -497,7 +500,7 @@ function GUI() {
                     className="mr-auto flex items-center gap-2"
                   >
                     <ArrowLeftIcon width="11px" height="11px" />
-                    Last Session
+                    {i18n.t("Last Session")}
                   </NewSessionButton>
                 </div>
               ) : null}

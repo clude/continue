@@ -10,6 +10,9 @@ import { IdeMessengerContext } from "../../context/IdeMessenger";
 import { isJetBrains } from "../../util";
 import HeaderButtonWithText from "../HeaderButtonWithText";
 import { CopyButton } from "./CopyButton";
+import i18n from 'i18next';
+// import { useTranslation } from 'react-i18next';
+// const { t } = useTranslation();
 
 const TopDiv = styled.div`
   position: sticky;
@@ -83,8 +86,8 @@ function CodeBlockToolBar(props: CodeBlockToolBarProps) {
               isTerminalCodeBlock(props.language, props.text)
                 ? "Run in terminal"
                 : applying
-                ? "Applying..."
-                : "Apply to current file"
+                  ? i18n.t("Applying...")
+                  : i18n.t("Apply to current file")
             }
             disabled={applying}
             style={{ backgroundColor: vscEditorBackground }}
@@ -114,7 +117,7 @@ function CodeBlockToolBar(props: CodeBlockToolBarProps) {
           </HeaderButtonWithText>
         )}
         <HeaderButtonWithText
-          text="Insert at cursor"
+          text={i18n.t("Insert at cursor")}
           style={{ backgroundColor: vscEditorBackground }}
           onClick={() => {
             ideMessenger.post("insertAtCursor", { text: props.text });

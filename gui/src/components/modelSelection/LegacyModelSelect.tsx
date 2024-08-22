@@ -29,6 +29,9 @@ import { RootState } from "../../redux/store";
 import { getMetaKeyLabel, isMetaEquivalentKeyPressed } from "../../util";
 import HeaderButtonWithText from "../HeaderButtonWithText";
 import ConfirmationDialog from "../dialogs/ConfirmationDialog";
+import i18n from 'i18next';
+// import { useTranslation } from 'react-i18next';
+// const { t } = useTranslation();
 
 const GridDiv = styled.div`
   display: grid;
@@ -281,7 +284,7 @@ function ModelSelect(props: {}) {
                     ))}
                     {options.length === 0 && <i>No models found</i>}
                     <i className="text-xs ml-2" style={{ color: lightGray }}>
-                      {getMetaKeyLabel()}' to toggle
+                      {getMetaKeyLabel()}' {i18n.t("to toggle")}
                     </i>
                   </StyledListboxOptions>
                 </Transition>,

@@ -24,6 +24,9 @@ import { getFontSize } from "../../util";
 import HeaderButtonWithText from "../HeaderButtonWithText";
 import { CopyButton } from "../markdown/CopyButton";
 import StyledMarkdownPreview from "../markdown/StyledMarkdownPreview";
+import i18n from 'i18next';
+// import { useTranslation } from 'react-i18next';
+// const { t } = useTranslation();
 
 interface StepContainerProps {
   item: ChatHistoryItem;
@@ -148,7 +151,7 @@ function StepContainer(props: StepContainerProps) {
 
               {truncatedEarly && (
                 <HeaderButtonWithText
-                  text="Continue generation"
+                  text={i18n.t("Continue generation")}
                   onClick={(e) => {
                     props.onContinueGeneration();
                   }}
@@ -166,7 +169,7 @@ function StepContainer(props: StepContainerProps) {
                 color={lightGray}
               />
               <HeaderButtonWithText
-                text="Regenerate"
+                text={i18n.t("Regenerate")}
                 onClick={(e) => {
                   props.onRetry();
                 }}
@@ -174,7 +177,7 @@ function StepContainer(props: StepContainerProps) {
                 <ArrowPathIcon color={lightGray} width="1.2em" height="1.2em" />
               </HeaderButtonWithText>
               {feedback === false || (
-                <HeaderButtonWithText text="Helpful">
+                <HeaderButtonWithText text={i18n.t("Helpful")}>
                   <HandThumbUpIcon
                     className={
                       "cursor-pointer hover:text-green-500" +
@@ -190,7 +193,7 @@ function StepContainer(props: StepContainerProps) {
                 </HeaderButtonWithText>
               )}
               {feedback === true || (
-                <HeaderButtonWithText text="Unhelpful">
+                <HeaderButtonWithText text={i18n.t("Unhelpful")}>
                   <HandThumbDownIcon
                     className={
                       "cursor-pointer hover:text-red-500" +
@@ -205,7 +208,7 @@ function StepContainer(props: StepContainerProps) {
                   />
                 </HeaderButtonWithText>
               )}
-              <HeaderButtonWithText text="Delete Message">
+              <HeaderButtonWithText text={i18n.t("Delete Message")}>
                 <TrashIcon
                   color={lightGray}
                   width="1.2em"

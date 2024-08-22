@@ -25,6 +25,9 @@ import {
   isMetaEquivalentKeyPressed,
 } from "../../util";
 import ModelSelect from "../modelSelection/ModelSelect";
+import i18n from 'i18next';
+// import { useTranslation } from 'react-i18next';
+// const { t } = useTranslation();
 
 const StyledDiv = styled.div<{ isHidden: boolean }>`
   padding: 4px 0;
@@ -109,7 +112,7 @@ function InputToolbar(props: InputToolbarProps) {
             }}
             className="hover:underline cursor-pointer"
           >
-            Add Context <PlusIcon className="h-2.5 w-2.5" aria-hidden="true" />
+            {i18n.t("Add Context")} <PlusIcon className="h-2.5 w-2.5" aria-hidden="true" />
           </StyledSpan>
           {defaultModel &&
             modelSupportsImages(
@@ -190,7 +193,7 @@ function InputToolbar(props: InputToolbarProps) {
               }}
               className={"hover:underline cursor-pointer float-right"}
             >
-              {getMetaKeyLabel()} ⏎ Use codebase
+              {getMetaKeyLabel()} ⏎ {i18n.t("Use codebase")}
             </StyledSpan>
           )}
           <EnterButton

@@ -1,0 +1,48 @@
+{
+    "New Session": "New Session",
+    "Last Session": "Last Session",
+    "Select Code + New Session": "Select Code + New Session",
+    "Edit highlighted code": "Edit highlighted code",
+    "Select Code": "Select Code",
+    "Accept Diff": "Accept Diff",
+    "Reject Diff": "Reject Diff",
+    "Accept Top Change in Diff": "Accept Top Change in Diff",
+    "Reject Top Change in Diff": "Reject Top Change in Diff",
+    "Toggle Continue Sidebar": "Toggle Continue Sidebar",
+    "Debug Terminal": "Debug Terminal",
+    "Cancel response": "Cancel response",
+    "Toggle Full Screen": "Toggle Full Screen",
+    "Toggle Selected Model": "Toggle Selected Model",
+    "Quick Input": "Quick Input",
+    "Toggle Sidebar": "Toggle Sidebar",
+
+    "Continue generation": "Continue generation",
+    "Regenerate": "Regenerate",
+    "Helpful": "Helpful",
+    "Unhelpful": "Unhelpful",
+    "Delete Message": "Delete Message",
+
+
+    "Add Context": "Add Context",
+    "Use codebase": "Use codebase",
+
+
+    "Images need to be in jpg or png format and less than 10MB in size.": "Images need to be in jpg or png format and less than 10MB in size.",
+    "Ask anything, '/' for slash commands, '@' to add context": "Ask anything, '/' for slash commands, '@' to add context",
+    "Ask a follow-up": "Ask a follow-up",
+
+    "Copied!": "Copied!",
+    "Copy": "Copy",
+
+    "to toggle": "to toggle",
+
+    "Add Model": "Add Model",
+
+    "Help": "Help",
+
+    "Configure Continue": "Configure Continue",
+
+    "Apply to current file": "Apply to current file",
+    "Applying...": "Applying...",
+    "Insert at cursor": "Insert at cursor"
+}

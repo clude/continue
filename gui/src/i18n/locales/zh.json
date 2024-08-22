@@ -1,0 +1,48 @@
+{
+    "New Session": "开启新会话(New Session)",
+    "Last Session": "上一个会话",
+    "Select Code + New Session": "选中代码 + 开启新会话",
+    "Edit highlighted code": "编辑高亮选中的代码",
+    "Select Code": "选中代码",
+    "Accept Diff": "接受Diff内容",
+    "Reject Diff": "拒绝Diff内容",
+    "Accept Top Change in Diff": "接受Diff中的Top Change",
+    "Reject Top Change in Diff": "拒绝Diff中的Top Change",
+    "Toggle Continue Sidebar": "切换Continue侧边栏",
+    "Debug Terminal": "Debug 终端Terminal",
+    "Cancel response": "取消当前Response",
+    "Toggle Full Screen": "全屏状态切换",
+    "Toggle Selected Model": "切换模型",
+    "Quick Input": "快速输入(Quick Input)",
+    "Toggle Sidebar": "切换侧边栏",
+
+    "Continue generation": "继续生成",
+    "Regenerate": "重新生成",
+    "Helpful": "赞",
+    "Unhelpful": "踩",
+    "Delete Message": "删除",
+
+
+    "Add Context": "添加上下文(Context)",
+    "Use codebase": "使用代码库",
+
+
+    "Images need to be in jpg or png format and less than 10MB in size.": "图片格式为jpg或png，大小不超过10MB",
+    "Ask anything, '/' for slash commands, '@' to add context": "输入任何问题，'/'表示快捷命令，'@'表示添加上下文",
+    "Ask a follow-up": "继续追问",
+
+    "Copied!": "已复制!",
+    "Copy": "复制",
+
+    "to toggle": "切换模型",
+
+    "Add Model": "添加模型",
+
+    "Help": "帮助文档",
+    
+    "Configure Continue": "设置中心",
+
+    "Apply to current file": "应用于当前文件",
+    "Applying...": "应用中...",
+    "Insert at cursor": "在游标处插入"
+}

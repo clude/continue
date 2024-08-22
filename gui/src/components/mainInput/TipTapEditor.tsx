@@ -57,6 +57,9 @@ import {
 } from "./getSuggestion";
 import { ComboBoxItem } from "./types";
 import { debounce } from "lodash";
+import i18n from 'i18next';
+// import { useTranslation } from 'react-i18next';
+// const { t } = useTranslation();
 
 const InputBoxDiv = styled.div`
   resize: none;
@@ -247,7 +250,7 @@ function TipTapEditor(props: TipTapEditorProps) {
     } else {
       ideMessenger.post("errorPopup", {
         message:
-          "Images need to be in jpg or png format and less than 10MB in size.",
+          i18n.t("Images need to be in jpg or png format and less than 10MB in size."),
       });
     }
     return undefined;
@@ -301,8 +304,8 @@ function TipTapEditor(props: TipTapEditorProps) {
       Placeholder.configure({
         placeholder: () =>
           historyLengthRef.current === 0
-            ? "Ask anything, '/' for slash commands, '@' to add context"
-            : "Ask a follow-up",
+            ? i18n.t("Ask anything, '/' for slash commands, '@' to add context")
+            : i18n.t("Ask a follow-up"),
       }),
       Paragraph.extend({
         addKeyboardShortcuts() {

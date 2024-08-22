@@ -24,6 +24,11 @@ import {
   isMetaEquivalentKeyPressed,
 } from "../../util";
 import ConfirmationDialog from "../dialogs/ConfirmationDialog";
+import i18n from 'i18next';
+// import { useTranslation } from 'react-i18next';
+// const { t } = useTranslation();
+
+
 
 const StyledListboxButton = styled(Listbox.Button)`
   font-family: inherit;
@@ -247,7 +252,7 @@ function ModelSelect() {
               >
                 <div className="flex items-center">
                   <PlusIcon className="w-4 h-4 mr-2" />
-                  Add Model
+                  {i18n.t("Add Model")}
                 </div>
               </StyledListboxOption>
             </>
@@ -263,7 +268,7 @@ function ModelSelect() {
               display: "block",
             }}
           >
-            {getMetaKeyLabel()}' to toggle
+            {getMetaKeyLabel()}' {i18n.t("to toggle")}
           </i>
         </StyledListboxOptions>
       </div>

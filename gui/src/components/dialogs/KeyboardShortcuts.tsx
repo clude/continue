@@ -7,6 +7,9 @@ import {
   vscForeground,
 } from "..";
 import { getPlatform, isJetBrains } from "../../util";
+import i18n from 'i18next';
+// import { useTranslation } from 'react-i18next';
+// const { t } = useTranslation();
 
 const GridDiv = styled.div`
   display: grid;
@@ -92,62 +95,62 @@ const vscodeShortcuts: KeyboardShortcutProps[] = [
   {
     mac: "⌘ L",
     windows: "⌃ L",
-    description: "Select Code + New Session",
+    description: i18n.t("Select Code + New Session"),
   },
   {
     mac: "⌘ I",
     windows: "⌃ I",
-    description: "Edit highlighted code",
+    description: i18n.t("Edit highlighted code"),
   },
   {
     mac: "⌘ ⇧ L",
     windows: "⌃ ⇧ L",
-    description: "Select Code",
+    description: i18n.t("Select Code"),
   },
   {
     mac: "⌘ ⇧ ⏎",
     windows: "⌃ ⇧ ⏎",
-    description: "Accept Diff",
+    description: i18n.t("Accept Diff"),
   },
   {
     mac: "⌘ ⇧ ⌫",
     windows: "⌃ ⇧ ⌫",
-    description: "Reject Diff",
+    description: i18n.t("Reject Diff"),
   },
   {
     mac: "⌥ ⌘ Y",
     windows: "Alt ⌃ Y",
-    description: "Accept Top Change in Diff",
+    description: i18n.t("Accept Top Change in Diff"),
   },
   {
     mac: "⌥ ⌘ N",
     windows: "Alt ⌃ N",
-    description: "Reject Top Change in Diff",
+    description: i18n.t("Reject Top Change in Diff"),
   },
   {
     mac: "⌥ ⌘ L",
     windows: "Alt ⌃ L",
-    description: "Toggle Continue Sidebar",
+    description: i18n.t("Toggle Continue Sidebar"),
   },
   {
     mac: "⌘ ⇧ R",
     windows: "⌃ ⇧ R",
-    description: "Debug Terminal",
+    description: i18n.t("Debug Terminal"),
   },
   {
     mac: "⌘ ⌫",
     windows: "⌃ ⌫",
-    description: "Cancel response",
+    description: i18n.t("Cancel response"),
   },
   {
     mac: "⌘ K ⌘ M",
     windows: "⌃ K ⌃ M",
-    description: "Toggle Full Screen",
+    description: i18n.t("Toggle Full Screen"),
   },
   {
     mac: "⌘ '",
     windows: "⌃ '",
-    description: "Toggle Selected Model",
+    description: i18n.t("Toggle Selected Model"),
   },
 ];
 
@@ -155,52 +158,52 @@ const jetbrainsShortcuts: KeyboardShortcutProps[] = [
   {
     mac: "⌘ J",
     windows: "⌃ J",
-    description: "Select Code + New Session",
+    description: i18n.t("Select Code + New Session"),
   },
   {
     mac: "⌘ ⇧ J",
     windows: "⌃ ⇧ J",
-    description: "Select Code",
+    description: i18n.t("Select Code"),
   },
   {
     mac: "⌘ I",
     windows: "⌃ I",
-    description: "Edit highlighted code",
+    description: i18n.t("Edit highlighted code"),
   },
   {
     mac: "⌘ ⇧ I",
     windows: "⌃ ⇧ I",
-    description: "Toggle inline edit focus",
+    description: i18n.t("Toggle inline edit focus"),
   },
   {
     mac: "⌘ ⇧ ⏎",
     windows: "⌃ ⇧ ⏎",
-    description: "Accept Diff",
+    description: i18n.t("Accept Diff"),
   },
   {
     mac: "⌘ ⇧ ⌫",
     windows: "⌃ ⇧ ⌫",
-    description: "Reject Diff",
+    description: i18n.t("Reject Diff"),
   },
   {
     mac: "⌥ ⇧ J",
     windows: "Alt ⇧ J",
-    description: "Quick Input",
+    description: i18n.t("Quick Input"),
   },
   {
     mac: "⌥ ⌘ J",
     windows: "Alt ⌃ J",
-    description: "Toggle Sidebar",
+    description: i18n.t("Toggle Sidebar"),
   },
   {
     mac: "⌘ ⌫",
     windows: "⌃ ⌫",
-    description: "Cancel response",
+    description: i18n.t("Cancel response"),
   },
   {
     mac: "⌘ '",
     windows: "⌃ '",
-    description: "Toggle Selected Model",
+    description: i18n.t("Toggle Selected Model"),
   },
 ];
 
