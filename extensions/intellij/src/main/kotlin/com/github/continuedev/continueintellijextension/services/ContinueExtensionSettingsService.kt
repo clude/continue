@@ -14,8 +14,8 @@ class ContinueSettingsComponent: DumbAware {
     val remoteConfigServerUrl: JTextField = JTextField()
     val remoteConfigSyncPeriod: JTextField = JTextField()
     val userToken: JTextField = JTextField()
-    val enableTabAutocomplete: JCheckBox = JCheckBox("Enable Tab Autocomplete")
-    val enableContinueTeamsBeta: JCheckBox = JCheckBox("Enable Continue for Teams Beta (requires restart)")
+    val enableTabAutocomplete: JCheckBox = JCheckBox("开启代码自动补全(Tab Autocomplete)")
+    val enableContinueTeamsBeta: JCheckBox = JCheckBox("启用Teams Beta功能 (重启IDE生效)")
 
     init {
         val constraints = GridBagConstraints()
@@ -26,15 +26,15 @@ class ContinueSettingsComponent: DumbAware {
         constraints.gridx = 0
         constraints.gridy = GridBagConstraints.RELATIVE
 
-        panel.add(JLabel("Remote Config Server URL:"), constraints)
+        panel.add(JLabel("远程配置服务器URL:"), constraints)
         constraints.gridy++
         panel.add(remoteConfigServerUrl, constraints)
         constraints.gridy++
-        panel.add(JLabel("Remote Config Sync Period (in minutes):"), constraints)
+        panel.add(JLabel("远程配置同步周期(分钟)"), constraints)
         constraints.gridy++
         panel.add(remoteConfigSyncPeriod, constraints)
         constraints.gridy++
-        panel.add(JLabel("User Token:"), constraints)
+        panel.add(JLabel("用户Token:"), constraints)
         constraints.gridy++
         panel.add(userToken, constraints)
         constraints.gridy++
