@@ -416,8 +416,8 @@ export class LanceDbIndex implements CodebaseIndex {
       console.warn("Table not found in LanceDB", tableName);
       return [];
     }
-
-    let query = db.search(vector);
+    const tbl = await db.openTable(tableName);
+    let query = tbl.search(vector);
     if (directory) {
       // seems like lancedb is only post-filtering, so have to return a bunch of results and slice after
       query = query.where(`path LIKE '${directory}%'`).limit(300);
