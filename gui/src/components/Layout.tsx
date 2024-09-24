@@ -28,6 +28,8 @@ import {
   setShowDialog,
 } from "../redux/slices/uiStateSlice";
 import ButtonWithTooltip from "./ButtonWithTooltip";
+import i18n from 'i18next';
+
 
 const FOOTER_HEIGHT = "1.8em";
 
@@ -250,7 +252,7 @@ const Layout = () => {
             <ProfileSwitcher />
             <ButtonWithTooltip
               tooltipPlacement="top-end"
-              text="More"
+              text={i18n.t("More")}
               onClick={() => {
                 if (location.pathname === "/help") {
                   navigate("/");

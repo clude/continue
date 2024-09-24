@@ -14,6 +14,7 @@ import {
 import { setDefaultModel } from "../redux/slices/stateSlice";
 import { FREE_TRIAL_LIMIT_REQUESTS, hasPassedFTL } from "../util/freeTrial";
 import { completionParamsInputs } from "../pages/AddNewModel/configs/completionParamsInputs";
+import i18n from 'i18next';
 
 interface QuickModelSetupProps {
   onDone: () => void;
@@ -98,7 +99,7 @@ function AddModelForm({
     <FormProvider {...formMethods}>
       <form onSubmit={formMethods.handleSubmit(onSubmit)}>
         <div className="p-6 max-w-md mx-auto">
-          <h1 className="text-center mb-0">Add Chat model</h1>
+          <h1 className="text-center mb-0">{i18n.t("Add Chat model")}</h1>
           {!hideFreeTrialLimitMessage && hasPassedFTL() && (
             <p className="text-sm text-gray-500">
               You've reached the free trial limit of {FREE_TRIAL_LIMIT_REQUESTS}{" "}

@@ -39,16 +39,16 @@ class ContinueSettingsComponent: DumbAware {
         constraints.gridx = 0
         constraints.gridy = GridBagConstraints.RELATIVE
 
-        panel.add(JLabel("Remote Config Server URL:"), constraints)
+        panel.add(JLabel("远程配置服务器URL:"), constraints)
         constraints.gridy++
         constraints.gridy++
         panel.add(remoteConfigServerUrl, constraints)
         constraints.gridy++
-        panel.add(JLabel("Remote Config Sync Period (in minutes):"), constraints)
+        panel.add(JLabel("远程配置同步周期(分钟)"), constraints)
         constraints.gridy++
         panel.add(remoteConfigSyncPeriod, constraints)
         constraints.gridy++
-        panel.add(JLabel("User Token:"), constraints)
+        panel.add(JLabel("用户Token:"), constraints)
         constraints.gridy++
         panel.add(userToken, constraints)
         constraints.gridy++

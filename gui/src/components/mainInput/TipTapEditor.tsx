@@ -57,6 +57,7 @@ import {
   getSlashCommandDropdownOptions,
 } from "./getSuggestion";
 import { ComboBoxItem } from "./types";
+import i18n from 'i18next';
 
 const InputBoxDiv = styled.div`
   resize: none;
@@ -258,7 +259,7 @@ function TipTapEditor(props: TipTapEditorProps) {
     } else {
       ideMessenger.post("showToast", [
         "error",
-        "Images need to be in jpg or png format and less than 10MB in size.",
+        i18n.t("Images need to be in jpg or png format and less than 10MB in size."),
       ]);
     }
     return undefined;
@@ -272,12 +273,12 @@ function TipTapEditor(props: TipTapEditorProps) {
 
   function getPlaceholder() {
     if (!hasDefaultModel) {
-      return "Configure a Chat model to get started";
+      return i18n.t("Configure a Chat model to get started");
     }
 
     return historyLengthRef.current === 0
-      ? "Ask anything, '/' for slash commands, '@' to add context"
-      : "Ask a follow-up";
+      ? i18n.t("Ask anything, '/' for slash commands, '@' to add context")
+      : i18n.t("Ask a follow-up");
   }
 
   const editor: Editor = useEditor({

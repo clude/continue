@@ -30,6 +30,7 @@ import {
 } from "../../util";
 import ConfirmationDialog from "../dialogs/ConfirmationDialog";
 import AddModelForm from "../../forms/AddModelForm";
+import i18n from 'i18next';
 
 interface ModelOptionProps {
   option: Option;
@@ -348,7 +349,7 @@ function ModelSelect() {
                 >
                   <div className="flex items-center py-0.5">
                     <PlusIcon className="w-4 h-4 mr-2" />
-                    Add Chat model
+                    {i18n.t("Add Chat model")}
                   </div>
                 </StyledListboxOption>
               </>
@@ -357,7 +358,7 @@ function ModelSelect() {
             <Divider className="!my-0" />
 
             <span className="block px-3 py-3" style={{ color: lightGray }}>
-              <code>{getMetaKeyLabel()} + '</code> to toggle
+              <code>{getMetaKeyLabel()} + '</code> {i18n.t("to toggle")}
             </span>
           </div>
         </StyledListboxOptions>

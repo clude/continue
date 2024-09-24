@@ -14,6 +14,7 @@ import { RootState } from "../../redux/store";
 import { getFontSize, isJetBrains } from "../../util";
 import ConfirmationDialog from "../dialogs/ConfirmationDialog";
 import StatusDot from "./StatusDot";
+import i18n from 'i18next';
 
 const STATUS_COLORS: Record<IndexingProgressUpdate["status"], string> = {
   disabled: lightGray, // light gray
@@ -37,12 +38,12 @@ const BUTTON_MESSAGES: Record<
   IndexingProgressUpdate["status"],
   string | undefined
 > = {
-  done: "Re-index",
+  done: i18n.t("Re-index"),
   loading: undefined,
-  indexing: "Pause",
-  paused: "Resume",
-  failed: "Retry",
-  disabled: "Enable",
+  indexing: i18n.t("Pause"),
+  paused: i18n.t("Resume"),
+  failed: i18n.t("Retry"),
+  disabled: i18n.t("Enable"),
 };
 
 const ProgressBarWrapper = styled.div`
@@ -188,8 +189,7 @@ const IndexingProgressBar = ({
           fontSize: getFontSize() - 2,
         }}
       >
-        Indexing generates embeddings used for codebase retrieval. The index is
-        stored entirely locally.
+        {i18n.t("Indexing generates embeddings used for codebase retrieval. The index is stored entirely locally.")}
       </i>
 
       <ProgressBarWrapper>
@@ -223,7 +223,7 @@ const IndexingProgressBar = ({
             ideMessenger.post("index/forceReIndex", undefined);
           }}
         >
-          Re-index
+          {i18n.t("Re-index")}
         </StyledButton>
       ) : indexingState.status === "failed" ? (
         <StyledButton
@@ -235,13 +235,13 @@ const IndexingProgressBar = ({
               dispatch(
                 setDialogMessage(
                   <ConfirmationDialog
-                    title="Rebuild codebase index"
+                    title={i18n.t("Rebuild codebase index")}
                     confirmText="Rebuild"
                     text={
-                      "Your index appears corrupted. We recommend clearing and rebuilding it, " +
-                      "which may take time for large codebases.\n\n" +
-                      "For a faster rebuild without clearing data, press 'Shift + Command + P' to open " +
-                      "the Command Palette, and type out 'Continue: Force Codebase Re-Indexing'"
+                      i18n.t("Your index appears corrupted. We recommend clearing and rebuilding it, ") +
+                      i18n.t("which may take time for large codebases.\n\n") +
+                      i18n.t("For a faster rebuild without clearing data, press 'Shift + Command + P' to open ") +
+                      i18n.t("the Command Palette, and type out 'Continue: Force Codebase Re-Indexing'")
                     }
                     onConfirm={() => {
                       posthog.capture("rebuild_index_clicked");
@@ -257,7 +257,7 @@ const IndexingProgressBar = ({
             }
           }}
         >
-          Retry
+          {i18n.t("Retry")}
         </StyledButton>
       ) : indexingState.status === "indexing" ||
         indexingState.status === "loading" ? (
@@ -271,7 +271,7 @@ const IndexingProgressBar = ({
               }
             }}
           >
-            Pause
+            {i18n.t("Pause")}
           </StyledButton>
         </div>
       ) : indexingState.status === "paused" ? (
@@ -284,7 +284,7 @@ const IndexingProgressBar = ({
             }
           }}
         >
-          Resume
+          {i18n.t("Resume")}
         </StyledButton>
       ) : null}
 

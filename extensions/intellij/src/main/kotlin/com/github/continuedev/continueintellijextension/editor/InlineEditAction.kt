@@ -256,7 +256,7 @@ class CustomPanel(layout: MigLayout, project: Project, modelTitles: List<String>
         val globalScheme = EditorColorsManager.getInstance().globalScheme
         val defaultBackground = globalScheme.defaultBackground
 
-        val leftButton = CustomButton("Esc to cancel") { onCancel() }.apply {
+        val leftButton = CustomButton("Esc 取消") { onCancel() }.apply {
             foreground = Color(128, 128, 128, 200)
             background = defaultBackground
         }
@@ -289,7 +289,7 @@ class CustomPanel(layout: MigLayout, project: Project, modelTitles: List<String>
 
         comboBoxRef.set(dropdown)
 
-        val rightButton = CustomButton("Submit") { onEnter() }.apply {
+        val rightButton = CustomButton("提交") { onEnter() }.apply {
 //            background = GetTheme().getHighlight()
             background = JBColor(0xe04573e8.toInt(), 0xe04573e8.toInt())
             foreground = JBColor(0xffffffff.toInt(), 0xffffffff.toInt())
@@ -316,7 +316,7 @@ class CustomPanel(layout: MigLayout, project: Project, modelTitles: List<String>
         val globalScheme = EditorColorsManager.getInstance().globalScheme
         val defaultBackground = globalScheme.defaultBackground
 
-        val leftButton = CustomButton("Esc to cancel") { onCancel() }.apply {
+        val leftButton = CustomButton("Esc 取消") { onCancel() }.apply {
             foreground = Color(128, 128, 128, 200)
             background = defaultBackground
         }
@@ -360,7 +360,7 @@ class CustomPanel(layout: MigLayout, project: Project, modelTitles: List<String>
     }
 
     private val subPanelC: JPanel = JPanel(MigLayout("insets 0, fillx")).apply {
-        val leftLabel = JLabel("Enter follow-up instructions").apply {
+        val leftLabel = JLabel("输入下一个指令").apply {
             foreground = Color(128, 128, 128, 200)
             font = UIUtil.getFontWithFallback("Arial", Font.PLAIN, 11)
         }
@@ -488,7 +488,7 @@ class CustomTextArea(rows: Int, columns: Int) : JXTextArea("") {
         if (text.isEmpty()) {
             g.color = Color(128, 128, 128, 255)
             g.font = UIUtil.getFontWithFallback("Arial", Font.PLAIN, MAIN_FONT_SIZE)
-            g.drawString("Enter instructions to edit highlighted code", 8, 20)
+            g.drawString("输入编辑指令用以修改选中的代码", 8, 20)
         }
 
         super.paintComponent(g)

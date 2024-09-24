@@ -11,6 +11,7 @@ import { useWebviewListener } from "../hooks/useWebviewListener";
 import { useDispatch } from "react-redux";
 import { setOnboardingCard } from "../redux/slices/uiStateSlice";
 import useHistory from "../hooks/useHistory";
+import i18n from 'i18next';
 
 interface MoreActionRowProps {
   title: string;
@@ -83,10 +84,10 @@ function MorePage() {
           onClick={() => navigate("/")}
           className="inline-block ml-4 cursor-pointer"
         />
-        <h3 className="text-lg font-bold m-2 inline-block">More</h3>
+        <h3 className="text-lg font-bold m-2 inline-block">{i18n.t("More")}</h3>
       </div>
 
-      <h3 className="my-3 mx-auto text-center">Codebase Indexing</h3>
+      <h3 className="my-3 mx-auto text-center">{i18n.t("Codebase Indexing")}</h3>
       <div
         className="p-6 pb-0 flex flex-col gap-6"
         style={{
@@ -103,20 +104,20 @@ function MorePage() {
           borderBottom: `0.5px solid ${lightGray}`,
         }}
       >
-        Help Center
+        {i18n.t("Help Center")}
       </h3>
       <div className="p-6 flex flex-col gap-6">
         <MoreActionRow
-          title="Documentation"
-          description="Visit the documentation site to learn how to configure and use Continue"
-          buttonText="View docs"
-          href="https://docs.continue.dev/"
+          title={i18n.t("Documentation")}
+          description={i18n.t("Visit the documentation site to learn how to configure and use Continue")}
+          buttonText={i18n.t("View docs")}
+          href="https://mate-ai.ouyeel.com/docs"
         />
 
         <MoreActionRow
-          title="Quickstart"
-          description="Reopen the quickstart and tutorial file"
-          buttonText="Open quickstart"
+          title={i18n.t("Quickstart")}
+          description={i18n.t("Reopen the quickstart and tutorial file")}
+          buttonText={i18n.t("Open quickstart")}
           onClick={() => {
             navigate("/");
             // Used to clear the chat panel before showing onboarding card
@@ -127,23 +128,23 @@ function MorePage() {
         />
 
         <MoreActionRow
-          title="Token usage stats"
-          description="See how many tokens you're using each day and how they're distributed across your models"
-          buttonText="View token usage"
+          title={i18n.t("Token usage stats")}
+          description={i18n.t("See how many tokens you're using each day and how they're distributed across your models")}
+          buttonText={i18n.t("View token usage")}
           onClick={() => navigate("/stats")}
         />
 
         <MoreActionRow
-          title="Have an issue?"
-          description="Let us know on GitHub and we'll do our best to resolve it"
-          buttonText="Create a GitHub issue"
+          title={i18n.t("Have an issue?")}
+          description={i18n.t("Let us know on GitHub and we'll do our best to resolve it")}
+          buttonText={i18n.t("Create a GitHub issue")}
           href="https://github.com/continuedev/continue/issues/new/choose"
         />
 
         <MoreActionRow
-          title="Join the community!"
-          description="Join us on Discord to stay up-to-date on the latest developments"
-          buttonText="Continue Discord"
+          title={i18n.t("Join the community!")}
+          description={i18n.t("Join us on Discord to stay up-to-date on the latest developments")}
+          buttonText={i18n.t("Continue Discord")}
           href="https://discord.gg/vapESyrFmJ"
         />
       </div>
@@ -155,7 +156,7 @@ function MorePage() {
           borderBottom: `0.5px solid ${lightGray}`,
         }}
       >
-        Keyboard Shortcuts
+        {i18n.t("Keyboard Shortcuts")}
       </h3>
       <KeyboardShortcutsDialog />
     </div>

@@ -27,7 +27,7 @@
                                 id="AutocompleteSpinnerWidget"/>
     </extensions>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <resource-bundle>messages.ActionBundles</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
         <postStartupActivity

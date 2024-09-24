@@ -1,0 +1,83 @@
+{
+    "New Session": "New Session",
+    "Last Session": "Last Session",
+    "Select Code + New Session": "Select Code + New Session",
+    "Edit highlighted code": "Edit highlighted code",
+    "Select Code": "Select Code",
+    "Accept Diff": "Accept Diff",
+    "Reject Diff": "Reject Diff",
+    "Accept Top Change in Diff": "Accept Top Change in Diff",
+    "Reject Top Change in Diff": "Reject Top Change in Diff",
+    "Toggle Continue Sidebar": "Toggle Continue Sidebar",
+    "Debug Terminal": "Debug Terminal",
+    "Cancel response": "Cancel response",
+    "Toggle Full Screen": "Toggle Full Screen",
+    "Toggle Selected Model": "Toggle Selected Model",
+    "Quick Input": "Quick Input",
+    "Toggle Sidebar": "Toggle Sidebar",
+
+    "Continue generation": "Continue generation",
+    "Regenerate": "Regenerate",
+    "Helpful": "Helpful",
+    "Unhelpful": "Unhelpful",
+    "Delete Message": "Delete Message",
+    "Delete": "Delete",
+
+
+    "Add Context": "Add Context",
+    "Use @codebase": "Use @codebase",
+
+
+    "Images need to be in jpg or png format and less than 10MB in size.": "Images need to be in jpg or png format and less than 10MB in size.",
+    "Ask anything, '/' for slash commands, '@' to add context": "Ask anything, '/' for slash commands, '@' to add context",
+    "Ask a follow-up": "Ask a follow-up",
+
+    "Copied!": "Copied!",
+    "Copy": "Copy",
+
+    "to toggle": "to toggle",
+
+    "Add Model": "Add Model",
+    "Add Chat model": "Add Chat model",
+
+    "Help": "Help",
+    "More": "More",
+    "Codebase Indexing": "Codebase Indexing",
+    "Indexing generates embeddings used for codebase retrieval. The index is stored entirely locally.": "Indexing generates embeddings used for codebase retrieval. The index is stored entirely locally.",
+    "Rebuild codebase index": "Rebuild codebase index",
+    "Your index appears corrupted. We recommend clearing and rebuilding it, ": "Your index appears corrupted. We recommend clearing and rebuilding it, ",
+    "which may take time for large codebases.\n\n": "which may take time for large codebases.\n\n",
+    "For a faster rebuild without clearing data, press 'Shift + Command + P' to open ": "For a faster rebuild without clearing data, press 'Shift + Command + P' to open ",
+    "the Command Palette, and type out 'Continue: Force Codebase Re-Indexing'": "the Command Palette, and type out 'Continue: Force Codebase Re-Indexing'",
+
+    "Help Center": "Help Center",
+    "Documentation": "Documentation",
+    "Visit the documentation site to learn how to configure and use Continue": "Visit the documentation site to learn how to configure and use Continue",
+    "View docs": "View docs",
+    "Quickstart": "Quickstart",
+    "Reopen the quickstart and tutorial file": "Reopen the quickstart and tutorial file",
+    "Open quickstart": "Open quickstart",
+    "Token usage stats": "Token usage stats",
+    "See how many tokens you're using each day and how they're distributed across your models": "See how many tokens you're using each day and how they're distributed across your models",
+    "View token usage": "View token usage",
+    "Have an issue?": "Have an issue?",
+    "Let us know on GitHub and we'll do our best to resolve it": "Let us know on GitHub and we'll do our best to resolve it",
+    "Create a GitHub issue": "Create a GitHub issue",
+    "Join the community!": "Join the community!",
+    "Join us on Discord to stay up-to-date on the latest developments": "Join us on Discord to stay up-to-date on the latest developments",
+    "Continue Discord": "Continue Discord",
+    "Keyboard Shortcuts": "Keyboard Shortcuts",
+
+    "Configure Continue": "Configure Continue",
+
+    "Apply to current file": "Apply to current file",
+    "Applying...": "Applying...",
+    "Insert at cursor": "Insert at cursor",
+
+    "Re-index": "Re-index",
+    "Pause": "Pause",
+    "Resume": "Resume",
+    "Retry": "Retry",
+    "Enable": "Enable"
+
+}

@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { IdeMessengerContext } from "../../context/IdeMessenger";
 import { isJetBrains } from "../../util";
 import ButtonWithTooltip from "../ButtonWithTooltip";
+import i18n from 'i18next';
 
 interface CopyButtonProps {
   text: string | (() => string);
@@ -19,7 +20,7 @@ export function CopyButton(props: CopyButtonProps) {
     <>
       <ButtonWithTooltip
         tabIndex={props.tabIndex}
-        text={copied ? "Copied!" : "Copy"}
+        text={copied ? i18n.t("Copied!") :  i18n.t("Copy")}
         onClick={(e) => {
           const text =
             typeof props.text === "string" ? props.text : props.text();

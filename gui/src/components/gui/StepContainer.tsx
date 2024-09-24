@@ -23,6 +23,9 @@ import { getFontSize } from "../../util";
 import ButtonWithTooltip from "../ButtonWithTooltip";
 import { CopyButton } from "../markdown/CopyButton";
 import StyledMarkdownPreview from "../markdown/StyledMarkdownPreview";
+import i18n from 'i18next';
+// import { useTranslation } from 'react-i18next';
+// const { t } = useTranslation();
 
 interface StepContainerProps {
   item: ChatHistoryItem;
@@ -147,7 +150,7 @@ function StepContainer(props: StepContainerProps) {
               {truncatedEarly && (
                 <ButtonWithTooltip
                   tabIndex={-1}
-                  text="Continue generation"
+                  text={i18n.t("Continue generation")}
                   onClick={(e) => {
                     props.onContinueGeneration();
                   }}
@@ -167,7 +170,7 @@ function StepContainer(props: StepContainerProps) {
               />
               <ButtonWithTooltip
                 tabIndex={-1}
-                text="Regenerate"
+                text={i18n.t("Regenerate")}
                 onClick={(e) => {
                   props.onRetry();
                 }}
@@ -175,7 +178,7 @@ function StepContainer(props: StepContainerProps) {
                 <ArrowPathIcon color={lightGray} width="1.2em" height="1.2em" />
               </ButtonWithTooltip>
               {feedback === false || (
-                <ButtonWithTooltip text="Helpful" tabIndex={-1}>
+                <ButtonWithTooltip text={i18n.t("Helpful")} tabIndex={-1}>
                   <HandThumbUpIcon
                     width="1.2em"
                     height="1.2em"
@@ -187,7 +190,7 @@ function StepContainer(props: StepContainerProps) {
                 </ButtonWithTooltip>
               )}
               {feedback === true || (
-                <ButtonWithTooltip text="Unhelpful" tabIndex={-1}>
+                <ButtonWithTooltip text={i18n.t("Unhelpful")} tabIndex={-1}>
                   <HandThumbDownIcon
                     width="1.2em"
                     height="1.2em"
@@ -198,7 +201,7 @@ function StepContainer(props: StepContainerProps) {
                   />
                 </ButtonWithTooltip>
               )}
-              <ButtonWithTooltip text="Delete" tabIndex={-1}>
+              <ButtonWithTooltip text={i18n.t("Delete")} tabIndex={-1}>
                 <TrashIcon
                   color={lightGray}
                   width="1.2em"

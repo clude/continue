@@ -1,0 +1,82 @@
+{
+    "New Session": "开启新会话(New Session)",
+    "Last Session": "上一个会话",
+    "Select Code + New Session": "选中代码 + 开启新会话",
+    "Edit highlighted code": "编辑高亮选中的代码",
+    "Select Code": "选中代码",
+    "Accept Diff": "接受Diff内容",
+    "Reject Diff": "拒绝Diff内容",
+    "Accept Top Change in Diff": "接受Diff中的Top Change",
+    "Reject Top Change in Diff": "拒绝Diff中的Top Change",
+    "Toggle Continue Sidebar": "切换Continue侧边栏",
+    "Debug Terminal": "Debug 终端Terminal",
+    "Cancel response": "取消当前Response",
+    "Toggle Full Screen": "全屏状态切换",
+    "Toggle Selected Model": "切换模型",
+    "Quick Input": "快速输入(Quick Input)",
+    "Toggle Sidebar": "切换侧边栏",
+
+    "Continue generation": "继续生成",
+    "Regenerate": "重新生成",
+    "Helpful": "赞",
+    "Unhelpful": "踩",
+    "Delete Message": "删除",
+    "Delete": "删除",
+
+
+    "Add Context": "添加上下文(Context)",
+    "Use @codebase": "使用代码库",
+
+
+    "Images need to be in jpg or png format and less than 10MB in size.": "图片格式为jpg或png，大小不超过10MB",
+    "Ask anything, '/' for slash commands, '@' to add context": "输入任何问题，'/'表示快捷命令，'@'表示添加上下文",
+    "Ask a follow-up": "继续追问",
+
+    "Copied!": "已复制!",
+    "Copy": "复制",
+
+    "to toggle": "切换模型",
+
+    "Add Model": "添加模型",
+    "Add Chat model": "添加模型",
+
+    "Help": "帮助文档",
+    "More": "更多",
+    "Codebase Indexing": "项目代码库构建索引",
+    "Indexing generates embeddings used for codebase retrieval. The index is stored entirely locally.": "索引生成用于代码库检索的embedding。索引完全存储在本地。",
+    "Rebuild codebase indexbase index": "重建代码库索引",
+    "Your index appears corrupted. We recommend clearing and rebuilding it, ": "您的索引似乎已损坏。我们建议清除并重建它, ",
+    "which may take time for large codebases.\n\n": "这可能会花费大量代码库的时间。\n\n",
+    "For a faster rebuild without clearing data, press 'Shift + Command + P' to open ": "要更快地重建而不清除数据，请按 'Shift + Command + P' 打开 ",
+    "the Command Palette, and type out 'Continue: Force Codebase Re-Indexing'": "命令面板，并输入 'Continue: Force Codebase Re-Indexing'",
+
+    "Help Center": "帮助中心",
+    "Documentation": "文档",
+    "Visit the documentation site to learn how to configure and use Continue": "访问文档站点了解如何配置和使用Continue",
+    "View docs": "查看文档",
+    "Quickstart": "快速开始",
+    "Reopen the quickstart and tutorial file": "重新打开快速开始向导",
+    "Open quickstart": "打开快速开始",
+    "Token usage stats": "Tokens使用状态",
+    "See how many tokens you're using each day and how they're distributed across your models": "查看每日使用的tokens数量以及它们在各个模型中的分布情况",
+    "View token usage": "查看token使用情况",
+    "Have an issue?": "遇到问题了？",
+    "Let us know on GitHub and we'll do our best to resolve it": "请在GitHub上提出问题，并尽力解决问题",
+    "Create a GitHub issue": "在GitHub上创建问题",
+    "Join the community!": "加入社区!",
+    "Join us on Discord to stay up-to-date on the latest developments": "在Discord上加入我们以及时了解最新动态",
+    "Continue Discord": "继续在Discord上讨论",
+    "Keyboard Shortcuts": "快捷键设置",
+    
+    "Configure Continue": "设置中心",
+
+    "Apply to current file": "应用于当前文件",
+    "Applying...": "应用中...",
+    "Insert at cursor": "在游标处插入",
+
+    "Re-index": "重新构建索引(Re-index)",
+    "Pause": "暂停(Pause)",
+    "Resume": "恢复(Resume)",
+    "Retry": "重试(Retry)",
+    "Enable": "启用(Enable)"
+}

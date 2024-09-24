@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
+import './i18n'
 import App from "./App";
 import CustomPostHogProvider from "./hooks/CustomPostHogProvider";
 import "./index.css";
